@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/style-login.css">
+
+</head>
+<body>
+   
+    <form class="box2" action="login.html" method="POST">
+        
+        <button type="back"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </button>
+    
+  
+        <h1>Sign Up</h1>
+        <input type="text" name="" placeholder="Username">
+        <input type="email" name="" placeholder="Email">
+        <input type="password" name="" placeholder="Password">
+       
+        
+       
+
+
+          <label for="exampleInputCountry"></label>
+          <select type="selected" class="form-control"  id="infgender" name="gender">
+            <option value="" selected="selected">Selecione um Gênero</option>
+            <option value="Male">Masculino</option>
+            <option value="Female">Feminino</option>
+          
+            <input type="date" class="date-signup">
+
+          <input type="submit" name="" value="Cadastrar">
+    </form>
+
+    
+
+
+
+    
+ <script>
+
+var fields = document.querySelectorAll(".form-group")
+
+    fields.forEach(function(field, index){
+
+        if(field.name == "gender"){
+
+            if (field.checked){
+                console.log("SIM", field)
+
+            }
+        } else{
+
+            console.log('NÃO');
+        }
+
+    });
+
+ </script>
+    
+    <script src="https://use.fontawesome.com/62e43a72a9.js">
+    
+
+
+
+
+</script>
+</body>
+
+</html>
